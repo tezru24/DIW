@@ -1,0 +1,14 @@
+.pagina {
+    width: 300px;
+    height: 1200px;
+    border: 1px;
+    border-style: groove;
+    border-color: black;
+}
+h1,h3 {
+    background-color: #69A0F3;
+    color: #FFFFFF;
+}
+.tabla2{
+    padding-bottom: 150px;
+}
