@@ -1,27 +1,47 @@
 .vlc {
-   padding-top: 50px;
-   margin-left: 40px;
+   padding-bottom: 40px;
+   margin-left: 60px;
 }
 .juve {
-    margin-left: 1500px;
+    margin-left: 1700px;
     margin-top: -70px;
 }
 .texto1 {
-    margin-left: 500px;
+    margin-left: 700px;
     margin-top: -50px;
 }
 .texto2 {
-    margin-left: 700px;
-    margin-top: -35px;
+    margin-left: 850px;
+    margin-top: -50px;
+    font-size: 80px;
 }
 .texto3 {
-    margin-left: 900px;
-    margin-top: -35px;
+    margin-left: 1020px;
+    margin-top: -150px;
 }
 .texto4 {
-    margin-left: 800px;
-    margin-top: -35px;
+    margin-left: 940px;
+    margin-top: -171px;
+    font-size: 80px;
 }
 .texto5 {
-    margin-left: 800px;
+    margin-left: 920px;
+    margin-top: 50px;
+}
+.barra{
+    margin-left: -40px;
+    border-left: 2px solid lightgrey;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    margin-top: -180px;
+}
+.tabla {
+    margin-left: 40px;
+}
+.info {
+    margin-top: -100px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
