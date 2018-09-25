@@ -1,0 +1,45 @@
+.tabla1 {
+    width: 60%;
+    height: 10%;
+    margin-top: 5%;
+    margin-left: 5%;
+    background-color: #F7F4F4;
+}
+.imagen1 {
+    width: 80px;
+    height: 80px;
+    margin-left: 5%; 
+    border-radius: 50%;
+}
+pre {
+    margin-top: -17%;
+  
+    line-height: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+}
+.columna1 {
+    width: 35%;
+}
+.imagen2 {
+    width: 70px;
+    height: 80px;
+    margin-left: 7%;
+    border-radius: 50%;
+}
+span {
+    color: blue;
+}
+.imagen3 {
+    width: 80px;
+    height: 80px;
+    margin-left: 5%;
+    border-radius: 50%;
+    margin-top: 6%;
+}
+.twitter {
+    margin-left: 60%;
+    margin-bottom: 10%;
+}
+    
