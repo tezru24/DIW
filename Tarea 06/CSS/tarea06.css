@@ -1,0 +1,36 @@
+.fila1 {
+    margin-left: 15%;
+}
+.titulo1 {
+    margin-left: 35%;
+    margin-top: -17%;
+    font-size: 26px;
+}
+.parrafo1 {
+    margin-left: 31%;
+    line-height: 2.5em;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fila2 {
+    width: 70%;
+    height: 35%;
+    margin-left: 13%;
+    margin-top: 8%;
+}
+.titulo2 {
+    margin-left: 3%;
+    font-size: 26px;
+}
+.parrafo2 {
+    line-height: 2.5em;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.imagen2 {
+    margin-left: 60%;
+    margin-top: -20%;
+}
