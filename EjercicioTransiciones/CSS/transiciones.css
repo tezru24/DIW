@@ -8,22 +8,18 @@ p {
     padding-top: 2%;
     padding-left: 40%;
 }
-img {
-    width: 64px;
-    height: 64px;
-}
 li {
     list-style: none;
     float: left;
     padding: 2%;
 }
 ul {
-    margin-left: 28%;
+    margin-left: 23%;
     margin-top: 5%;
 }
 li img {
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
     transition: all 0.3s;
     transform-origin: 50% 75%;
 }
@@ -33,7 +29,7 @@ li:hover img {
 }
 #primero,#segundo,#tercero,#cuarto,#quinto,#sexto {
     display: none;
-    margin-top: 10%;
+    margin-top: 13%;
 }
 .primero:hover #primero,.segundo:hover #segundo,.tercero:hover #tercero,.cuarto:hover #cuarto,.quinto:hover #quinto,.sexto:hover #sexto {
     display: block;
