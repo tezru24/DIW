@@ -1,0 +1,29 @@
+img {
+    width: 64px;
+    height: 64px;
+}
+li {
+    list-style: none;
+    float: left;
+}
+ul {
+    margin-left: 30%;
+    margin-top: 5%;
+}
+li img {
+    width: 64px;
+    height: 64px;
+    transition: all 0.3s;
+    transform-origin: 50% 75%;
+}
+li:hover img { 
+    transform: scale(2);
+    margin: 0 2em;
+}
+#primero,#segundo,#tercero,#cuarto,#quinto,#sexto {
+    display: none;
+    margin-top: 10%;
+}
+.primero:hover #primero,.segundo:hover #segundo,.tercero:hover #tercero,.cuarto:hover #cuarto,.quinto:hover #quinto,.sexto:hover #sexto {
+    display: block;
+}
