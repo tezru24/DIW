@@ -15,9 +15,10 @@ img {
 li {
     list-style: none;
     float: left;
+    padding: 2%;
 }
 ul {
-    margin-left: 35%;
+    margin-left: 28%;
     margin-top: 5%;
 }
 li img {
