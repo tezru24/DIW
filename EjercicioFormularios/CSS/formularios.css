@@ -1,0 +1,30 @@
+.cajaPrincipal {
+    width: 45%;
+    height: 70%;
+    margin-left: 25%;
+    background-color: grey;
+}
+.cajas {
+    margin-left: 5%;
+    margin-top: 3%;
+}
+#email{
+    margin-left: 30.5%;
+}
+#password {
+    margin-left: 26%;
+}
+#description {
+    width: 245px;
+    margin-left: 23.5%;
+}
+.boton {
+    padding-left: 40%;
+    margin-top: 10%;
+}
+legend {
+    padding-top: 5%;
+}
+#email:valid {
+    border: 1px solid green;
+}

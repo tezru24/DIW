@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Ejercicio Formularios</title>
+    <link rel="stylesheet" type="text/css" href="CSS/formularios.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+<div class="cajaPrincipal">
+    <form>
+    <center>
+    <legend><b>Inicia Sesión</b></legend>
+    </center>
+    <div class="cajas">
+        <label for="email">Email</label>
+        <input id="email" name="email" autofocus="true" placeholder="sucorreo@correo.org" type="email" />
+    </div>
+    <div class="cajas">
+        <label for="password">Password</label>
+        <input id="password" name="password" placeholder="********" pattern="[0-9A-Za-z]{8,}" minlength="8" required="true" type="password" />
+    </div>
+    <div class="cajas">
+        <label for="description">Descripción</label>
+        <textarea id="description" name="description" placeholder="Cuéntame algo" pattern="[0-9A-Za-z]{4,255}" minlength="8" type="password"></textarea>
+    </div>
+    <div class="boton">
+        <input type="submit">
+    </div>
+</form>
+</div>
+</body>
+
+
+
+
+
+
+</html>
