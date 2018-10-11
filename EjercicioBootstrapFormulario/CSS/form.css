@@ -1,0 +1,61 @@
+.pagina {
+    width: 100%;
+    height: 100%;
+}
+
+.titulo {
+    margin-top: 10px;
+}
+.alumno {
+    padding-left: 15%;
+    padding-top: 2%;
+}
+#alumno {
+    width: 30%;
+}
+.grupo {
+    padding-left: 50%;
+    margin-top: -2.75%;
+}
+#grupo {
+    width: 40%;
+}
+.profesor {
+    padding-top: 1%;
+    padding-left: 15%;
+}
+#profesor {
+    width: 27.5%;
+}
+.horario {
+    padding-left: 50%;
+    margin-top: -2.75%;
+}
+#fecha,#horario {
+    width: 15.75%;
+}
+.fecha-incidente {
+    padding-top: 1%;
+    padding-left: 15%;
+}
+#fecha-incidente {
+    width: 27%;
+}
+.hora {
+    padding-left: 50%;
+    margin-top: -2.75%;
+}
+#hora {
+    width: 10%;
+}
+.lugar {
+    padding-left: 58.5%;
+    margin-top: -2.75%;
+}
+#lugar {
+    width: 30.75%;
+}
+.texto1 {
+    padding-left: 12%;
+    padding-top: 2%;
+}
