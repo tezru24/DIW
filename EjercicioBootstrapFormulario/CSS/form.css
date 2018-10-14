@@ -15,47 +15,63 @@
 }
 .grupo {
     padding-left: 50%;
-    margin-top: -2.75%;
+    margin-top: -2%;
 }
 #grupo {
     width: 40%;
 }
 .profesor {
-    padding-top: 1%;
+    padding-top: 0.5%;
     padding-left: 15%;
 }
 #profesor {
-    width: 27.5%;
+    width: 28.75%;
 }
 .horario {
     padding-left: 50%;
-    margin-top: -2.75%;
+    margin-top: -2%;
 }
 #fecha,#horario {
-    width: 15.75%;
+    width: 16%;
 }
 .fecha-incidente {
-    padding-top: 1%;
+    padding-top: 0.5%;
     padding-left: 15%;
 }
 #fecha-incidente {
-    width: 27%;
+    width: 27.45%;
 }
 .hora {
     padding-left: 50%;
-    margin-top: -2.75%;
+    margin-top: -2%;
 }
 #hora {
     width: 10%;
 }
 .lugar {
-    padding-left: 58.5%;
-    margin-top: -2.75%;
+    padding-left: 57.8%;
+    margin-top: -1.9%;
 }
 #lugar {
     width: 30.75%;
 }
 .texto1 {
-    padding-left: 12%;
+    padding-left: 15%;
     padding-top: 2%;
+}
+p {
+    padding-left: 15%;
+}
+#d1 {
+    width: 58%;
+    margin-left: 15%;
+}
+#titulo {
+    margin-left: 20%;
+}
+#d2 {
+    width: 35%;
+}
+#d3 {
+    width: 23.5%;
 }
