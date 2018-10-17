@@ -11,7 +11,8 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-  
+    <img class="logo" src="img/generalitat.png">
+    <img class="logo" src="img/lasenia.png">
     <form onsubmit="return onSubmit(this)">
         <div class="pagina">
         <div class="titulo">
@@ -31,12 +32,12 @@
         </div>
         <div class="horario">
             <label for="horario">Horari d'atenció</label>
-            <input id="fecha" name="fecha" type="date" placeholder="DD/MM/AAAA" />
+            <input id="fecha" name="fecha" type="date" placeholder="DD/MM/AAAA" value="" />
             <input id="horario" name="horario" type="time" placeholder="HH:MM" />
         </div>
         <div class="fecha-incidente">
                 <label for="fecha-incidente">Data de l'incident</label>
-                <input id="fecha-incidente" name="fecha-incidente" type="date" placeholder="DD/MM/AAAA" />
+                <input id="fecha-incidente" name="fecha-incidente" type="date" placeholder="DD/MM/AAAA" value=""/>
         </div>
         <div class="hora">
                 <label for="hora">Hora</label>
@@ -46,22 +47,45 @@
                 <label for="lugar">Lloc</label>
                 <input id="lugar" name="lugar" />
         </div>
-        <p class="texto1">En aplicació de l'article 37 del decret 39/08 sobre drets i deures, es comunica al pare/mare de l'alumne la imposició de la següent mesura correctora:</p>
         <br />
+        <br />
+        <p class="margen">Descripció de l'incident:</p>
+        <textarea name="textarea" class="margen" id="tamanyo"></textarea>
+        <div class="profesor">
+            <input name="radio" type="radio" /> Grave
+            <input name="radio" type="radio" checked="true"/> Leve
+        </div>
+        <p class="texto1">En aplicació de l'article 37 del decret 39/08 sobre drets i deures, es comunica al pare/mare de l'alumne la imposició de la següent mesura correctora:</p>
         <input name="checkbox1" type="checkbox" class="margen"> Compareixença davant del cap d'estudis/director <br />
         <input name="checkbox2" type="checkbox" class="margen"> Retirada d'aparells electrónics (1) <br />
-        <input name="checkbox3" type="checkbox" class="margen"> Privació del temps de recreació els dies <br />
+        <input name="checkbox3" type="checkbox" class="margen"> Privació del temps de recreació els dies:<br />
+        <select class="dias" name="dias">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+        </select>
+        <br />
         <input name="checkbox4" type="checkbox" class="margen"> Realització de les següents tasques educadores:<br />
         <input name="checkbox5" id="d1" name="d1" />
         <p></p>
-        <p class="margen">els dies <input id="d2" name="d2" type="date"/> i amb l'horari <input class="d3" name="d3" type="time"/></p>
+        <p class="margen">els dies <input id="d2" name="d2" type="date" value=""/> i amb l'horari <input class="d3" name="d3" type="time"/></p>
         <input name="checkbox6" type="checkbox" class="margen"> Suspensió del dret a participar en activitats extraescolars i complementàries des de<br />
-        <input class="d3" name="d3" type="date" id="margen2"> fins a <input class="d3" name="d3" type="date"/><p></p>
-        <input type="checkbox" class="margen"> Suspensió del dret de l'assistència a les classes de <input id="d4" name="d4" />
+        <input class="d3" name="d3" type="date" id="margen2" value=""> fins a <input class="d3" name="d3" type="date" id="margen3" value="" /><p></p>
+        <input type="checkbox" class="margen" name="checkbox7"> Suspensió del dret de l'assistència a les classes de <input id="d4" name="d4" />
         <p></p>
-        <p class="margen"> des de <input id="d2" name="d2" /> fins a <input class="d3" name="d3" /> (2)</p>
-        <p class="margen">Descripció de l'incident:</p>
-        <textarea name="textarea" class="margen" id="tamanyo"></textarea>
+        <p class="margen"> des de <input type="date" id="d5" name="d2" value=""/> fins a <input type="date" class="d3" name="d3" id="d6" value=""/> (2)</p>
         <p class="margen">Tipificació (3) de l'incident segons l'article 35: </p>
         <p></p>
         <textarea name="textarea2" class="margen" id="tamanyo2"></textarea>
