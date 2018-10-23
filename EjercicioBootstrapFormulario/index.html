@@ -10,10 +10,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </head>
-<body>
+<body onload="inicio()">
     <img class="logo" src="img/generalitat.png">
     <img class="logo" src="img/lasenia.png">
-    <form onsubmit="return onSubmit(this)">
+    <form id="formulario" onsubmit="return onSubmit(this)">
         <div class="pagina">
         <div class="titulo">
             <p id="titulo"><b>COMUNICACIÓ DE MESURES CORRECTORES</b></p>
@@ -52,9 +52,10 @@
         <p class="margen">Descripció de l'incident:</p>
         <textarea name="textarea" class="margen" id="tamanyo"></textarea>
         <div class="profesor">
-            <input name="radio" type="radio" /> Grave
-            <input name="radio" type="radio" checked="true"/> Leve
+            <input id="grave" name="radio" type="radio" onclick="EliminarDiv()" /> Grave
+            <input id="leve" name="radio" type="radio" checked="true" onclick="EliminarDiv()" /> Leve
         </div>
+        <div id="seleccionLeve">
         <p class="texto1">En aplicació de l'article 37 del decret 39/08 sobre drets i deures, es comunica al pare/mare de l'alumne la imposició de la següent mesura correctora:</p>
         <input name="checkbox1" type="checkbox" class="margen"> Compareixença davant del cap d'estudis/director <br />
         <input name="checkbox2" type="checkbox" class="margen"> Retirada d'aparells electrónics (1) <br />
@@ -86,10 +87,20 @@
         <input type="checkbox" class="margen" name="checkbox7"> Suspensió del dret de l'assistència a les classes de <input id="d4" name="d4" />
         <p></p>
         <p class="margen"> des de <input type="date" id="d5" name="d2" value=""/> fins a <input type="date" class="d3" name="d3" id="d6" value=""/> (2)</p>
-        <p class="margen">Tipificació (3) de l'incident segons l'article 35: </p>
-        <p></p>
-        <textarea name="textarea2" class="margen" id="tamanyo2"></textarea>
-        <input class="boton" type="submit" value="Enviar Formulario">
+        <div class="tipificacion1">
+            <p class="margen">Tipificació (3) de l'incident segons l'article 35: </p>
+            <p></p>
+            <textarea name="textarea2" class="margen" id="tamanyo2"></textarea>
+        </div>
+        </div>
+        <div id="seleccionGrave">
+        <div class="tipificacion2">
+            <p class="margen">Tipificació (3) de l'incident segons l'article 42: </p>
+            <p></p>
+            <textarea name="textarea2" class="margen" id="tamanyo2"></textarea>
+        </div>
+        </div>
+        <input class="boton" type="submit" value="Enviar Formulario" >
         </div>
     </form>
 </body>
