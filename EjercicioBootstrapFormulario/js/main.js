@@ -3,8 +3,10 @@ function onSubmit( form ){
     var data = JSON.stringify( $(form).serializeArray() ); //  <-----------
     console.log( data );
     return false; //don't submit
-  }
-
+}
+function MarcarLeve(){
+    document.getElementById('leve').checked = 1;
+}
 function inicio() {
   var date = new Date();
 
@@ -23,13 +25,14 @@ function inicio() {
   document.getElementById('margen3').value = today;
   document.getElementById('d5').value = today;
   document.getElementById('d6').value = today;
+
+  MarcarLeve();
 }
 function EliminarDiv(){
   document.getElementById('seleccionLeve').style.display = document.getElementById("leve").checked ? "block": "none";
+  document.getElementById('tipificacion-Leve').style.display = document.getElementById("leve").checked ? "block": "none";
   document.getElementById('seleccionGrave').style.display = document.getElementById("grave").checked ? "block": "none";
-}
-function MarcarLeve(){
-  document.getElementById('leve').checked = 1;
+  document.getElementById('tipificacion-Grave').style.display = document.getElementById("grave").checked ? "block": "none";
 }
 function Resetear(){
   document.getElementById('formulario').reset();

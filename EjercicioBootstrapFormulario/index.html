@@ -50,16 +50,16 @@
         <br />
         <br />
         <p class="margen">Descripció de l'incident:</p>
-        <textarea name="textarea" class="margen" id="tamanyo"></textarea>
+        <textarea name="textarea-descripcion" class="margen" id="tamanyo"></textarea>
         <div class="profesor">
             <input id="grave" name="radio" type="radio" onclick="EliminarDiv()" /> Grave
             <input id="leve" name="radio" type="radio" checked="true" onclick="EliminarDiv()" /> Leve
         </div>
         <div id="seleccionLeve">
         <p class="texto1">En aplicació de l'article 37 del decret 39/08 sobre drets i deures, es comunica al pare/mare de l'alumne la imposició de la següent mesura correctora:</p>
-        <input name="checkbox1" type="checkbox" class="margen"> Compareixença davant del cap d'estudis/director <br />
-        <input name="checkbox2" type="checkbox" class="margen"> Retirada d'aparells electrónics (1) <br />
-        <input name="checkbox3" type="checkbox" class="margen"> Privació del temps de recreació els dies:<br />
+        <input name="mesura1" type="checkbox" class="margen"> Compareixença davant del cap d'estudis/director <br />
+        <input name="mesura2" type="checkbox" class="margen"> Retirada d'aparells electrónics (1) <br />
+        <input name="mesura3" type="checkbox" class="margen"> Privació del temps de recreació els dies:<br />
         <select class="dias" name="dias">
             <option value="1">1</option>
             <option value="2">2</option>
@@ -78,27 +78,83 @@
             <option value="15">15</option>
         </select>
         <br />
-        <input name="checkbox4" type="checkbox" class="margen"> Realització de les següents tasques educadores:<br />
-        <input name="checkbox5" id="d1" name="d1" />
+        <input name="mesura4" type="checkbox" class="margen"> Realització de les següents tasques educadores:<br />
+        <input name="mesura5" id="d1" />
         <p></p>
-        <p class="margen">els dies <input id="d2" name="d2" type="date" value=""/> i amb l'horari <input class="d3" name="d3" type="time"/></p>
-        <input name="checkbox6" type="checkbox" class="margen"> Suspensió del dret a participar en activitats extraescolars i complementàries des de<br />
-        <input class="d3" name="d3" type="date" id="margen2" value=""> fins a <input class="d3" name="d3" type="date" id="margen3" value="" /><p></p>
-        <input type="checkbox" class="margen" name="checkbox7"> Suspensió del dret de l'assistència a les classes de <input id="d4" name="d4" />
+        <p class="margen">els dies <input id="d2" name="mesura6" type="date" value=""/> i amb l'horari <input class="d3" name="mesura7" type="time"/></p>
+        <input name="mesura8" type="checkbox" class="margen"> Suspensió del dret a participar en activitats extraescolars i complementàries des de<br />
+        <input class="d3" name="mesura9" type="date" id="margen2" value=""> fins a <input class="d3" name="mesura10" type="date" id="margen3" value="" /><p></p>
+        <input type="checkbox" class="margen" name="mesura11"> Suspensió del dret de l'assistència a les classes de <input id="d4" name="mesura12" />
         <p></p>
-        <p class="margen"> des de <input type="date" id="d5" name="d2" value=""/> fins a <input type="date" class="d3" name="d3" id="d6" value=""/> (2)</p>
+        <p class="margen"> des de <input type="date" id="d5" name="mesura13" value=""/> fins a <input type="date" class="d3" name="mesura14" id="d6" value=""/> (2)</p>
         <div class="tipificacion1">
             <p class="margen">Tipificació (3) de l'incident segons l'article 35: </p>
             <p></p>
-            <textarea name="textarea2" class="margen" id="tamanyo2"></textarea>
+            <textarea name="textarea-tipificacion-Leve" class="margen" id="tamanyo2"></textarea>
         </div>
         </div>
         <div id="seleccionGrave">
         <div class="tipificacion2">
             <p class="margen">Tipificació (3) de l'incident segons l'article 42: </p>
             <p></p>
-            <textarea name="textarea2" class="margen" id="tamanyo2"></textarea>
+            <textarea name="textarea3" class="margen" id="tamanyo3"></textarea>
         </div>
+        </div>
+        <div id="tipificacion-Grave">
+            <p class="texto1">(3)Tipificació:</p>
+            <input type="checkbox" class="margen" name="checkbox8" /> Els actes greus d'indisciplina i les injúries i ofenses contra memebres de la comunitat educativa que sobrepassen la
+            <p class="margen2">incorrecció o la desconsideració previstes en el article 35.</p>
+            <input type="checkbox" class="margen" name="checkbox9" /> L'agressió física o moral, les amenaces i coaccions i la discriminació greu a qualsevol memebre de la comunitat
+            <p class="margen2">educativa, així com la falta de respecte greu a la integritat i dignitat personal.</p>
+            <input type="checkbox" class="margen" name="checkbox10" /> Les vexacions i humiliacions a qualsevol membre de la comunitat escolar, particularment si tenen un 
+            <p class="margen2">comportament sexista o xenèfon, així com les que es realitzen contra els membres més vulnerables per les seues<br />
+            característiques personals, socials o educatives.</p>
+            <input type="checkbox" class="margen" name="checkbox11" /> L'assetjament escolar.<p></p>
+            <input type="checkbox" class="margen" name="checkbox12" /> La suplantació de personalitat en actes de la vida docent.<p></p>
+            <input type="checkbox" class="margen" name="checkbox13" /> La falsificació, el deteriorament o la sustracció de documentació acadèmica.<p></p>
+            <input type="checkbox" class="margen" name="checkbox14" /> Els danys greus causats en els locals, materials o documents del centre o en els béns del membres de la<br />
+            <p class="margen2">comunitat educativa.</p>
+            <input type="checkbox" class="margen" name="checkbox15" /> Els actes injustificats que pertorben greument el normal desenvolupament de les activitats del centre.<p></p>
+            <input type="checkbox" class="margen" name="checkbox16" /> Les actuacions que puguen perjudicar greument la salut i la integritat personal del membres de la<br />
+            <p class="margen2">comunitat educativa.</p>
+            <input type="checkbox" class="margen" name="checkbox17" /> La introducció en el centre d'objectes perillosos o substàncies perjudicials per a la salut i la integritat personal dels<br />
+            <p class="margen2">membres de la comunitat educativa.</p>
+            <input type="checkbox" class="margen" name="checkbox18" /> Les conductes tipificades com a contràries a les normes de convivència del centre educatiu si concorren<br />
+            <p class="margen2">círcumstàncies de col·lectivitat o publicitat intencionada per qualsevol mitjà.</p>
+            <input type="checkbox" class="margen" name="checkbox19" /> La incitació o l'estímul a cometre una falta que afecte greument la convivència en el centre.<p></p>
+            <input type="checkbox" class="margen" name="checkbox20" /> La negativa reiterada al compliment de les mesures educatives correctores adoptades davant de conductes<br />
+            <p class="margen2">contràries a les normes de convivència.</p>
+            <input type="checkbox" class="margen" name="checkbox21" /> La negativa reiterada al compliment de les mesures disciplinàries adoptades davant de faltes que afecten<br />
+            <p class="margen2">greument a la convivència en el centre.</p>
+            <input type="checkbox" class="margen" name="checkbox22" /> L'accés indegut o sense autorització a fitxers o servidors del centre.<p></p>
+            <input type="checkbox" class="margen" name="checkbox23" /> Actes atemptatoris respecte al projecte educatiu, així com al caràcter propi del centre.<br />
+        </div>
+        <div id="tipificacion-Leve">
+            <p class="texto1">(3)Tipificació:</p>
+            <input type="checkbox" class="margen" name="checkbox24" /> Les faltes de puntualitat injustificades<p></p>
+            <input type="checkbox" class="margen" name="checkbox25" /> Les faltes d'assistència injustificades<p></p>
+            <input type="checkbox" class="margen" name="checkbox26" /> Els actes que alteren el normal desenvolupament de les activitats del centre educatiu, especialment els que alteren<br />
+            <p class="margen2">normal desenvolupament de les classes.</p>
+            <input type="checkbox" class="margen" name="checkbox27" /> Els actes d'indisciplina.<p></p>
+            <input type="checkbox" class="margen" name="checkbox28" /> Els actes d'incorrecció o desconsideració, les injúries i les ofenses contra els membres de la comunitat educativa.<p></p>
+            <input type="checkbox" class="margen" name="checkbox29" /> El furt o deteriorament intencionat d'inmobles, materials, documentació o recursos del centre.<p></p>
+            <input type="checkbox" class="margen" name="checkbox30" /> El furt o deteriorament intencionat del béns o materials dels membres de la comunitat educativa.<p></p>
+            <input type="checkbox" class="margen" name="checkbox31" /> Les accions que puguen ser perjudicials per a la integritat i la salut dels membres de la comunitat educativa.<p></p>
+            <input type="checkbox" class="margen" name="checkbox32" /> La negativa sistemàtica a portar el material necessari per al desenvolupament del procés d'ensenyament-aprenentatge.<p></p>
+            <input type="checkbox" class="margen" name="checkbox33" /> La negativa a traslladar la informació facilitada als pares,mares,tutors o tutores per part del centre i viceversa.<p></p>
+            <input type="checkbox" class="margen" name="checkbox34" /> L'alteració o manipulació de la documentació facilitada als pares,mares,tutors o tutores per part del centre.<p></p>
+            <input type="checkbox" class="margen" name="checkbox35" /> La suplantació de la personalitat dels membres de la comunitat escolar.<p></p>
+            <input type="checkbox" class="margen" name="checkbox36" /> La utilització inadequada de les tecnologies de la informació i comunicació durant les activitats que es realitzen en el<br />
+            <p class="margen2">centre educatiu.</p>
+            <input type="checkbox" class="margen" name="checkbox37" /> L'ús de teléfons mòbils, aparells de so i altres aparells electrònics aliens al procés d'ensenyament-aprenentatge. Durant<br />
+            <p class="margen2">les activitats que es realitzen en el centre educatiu.</p>
+            <input type="checkbox" class="margen" name="checkbox38" /> Els actes que dificulten o impedisquen el dret i el deure de l'estudi dels seus companys i companyes.<p></p>
+            <input type="checkbox" class="margen" name="checkbox39" /> La incitació o estímul a cometre una falta contrària a les normes de convivència.<p></p>
+            <input type="checkbox" class="margen" name="checkbox40" /> La negativa al compliment de les mesures correctores adoptades davant de conductes contràries a les normes de<br />
+            <p class="margen2">convivència.</p>
+            <input type="checkbox" class="margen" name="checkbox41" /> L'ús inadequat de les infraestructures i béns o equips materials del centre.<p></p>
+            <input type="checkbox" class="margen" name="checkbox42" /> La desobediència en el compliment de les normes de caràcter propi del centre i que estiguen incloses en el seu projecte<br />
+            <p class="margen2">educatiu.</p>
         </div>
         <input class="boton" type="submit" value="Enviar Formulario" >
         </div>
