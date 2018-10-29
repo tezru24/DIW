@@ -1,0 +1,52 @@
+const mongoose= require('mongoose');
+
+const IncidenciaLeveSchema = mongoose.Schema({
+    nombreAlumno:String,
+    nombreProfesor:String,
+    grupo:String,
+    lugar:String,
+    horariFecha:Date,
+    horariHora:Date,
+    fechaIncidente:Date,
+    hora:Date,
+    descripcion:String,
+    cbCompareixença:String,
+    cbRetirada:String,
+    cbPrivacio:String,
+    dias:Number,
+    cbRealitzacio:String,
+    inputRealitzacio:String,
+    fechaRealitzacio:Date,
+    horariRealitzacio:Date,
+    cbSuspensio1:String,
+    fechaSuspensio1:Date,
+    horariSuspensio1:Date,
+    cbSuspensio2:String,
+    inputSuspensio2:String,
+    fecha1Suspensio2:Date,
+    fecha2Suspensio2:Date,
+    cbTipificacioLeve1:String,
+    cbTipificacioLeve2:String,
+    cbTipificacioLeve3:String,
+    cbTipificacioLeve4:String,
+    cbTipificacioLeve5:String,
+    cbTipificacioLeve6:String,
+    cbTipificacioLeve7:String,
+    cbTipificacioLeve8:String,
+    cbTipificacioLeve9:String,
+    cbTipificacioLeve10:String,
+    cbTipificacioLeve11:String,
+    cbTipificacioLeve12:String,
+    cbTipificacioLeve13:String,
+    cbTipificacioLeve14:String,
+    cbTipificacioLeve15:String,
+    cbTipificacioLeve16:String,
+    cbTipificacioLeve17:String,
+    cbTipificacioLeve18:String,
+    cbTipificacioLeve19:String,
+},{
+    timestamps:true
+});
+
+
+module.exports = mongoose.model('Incidencia-Leve',IncidenciaLeveSchema);

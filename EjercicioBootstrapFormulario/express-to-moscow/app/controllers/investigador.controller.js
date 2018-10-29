@@ -1,17 +1,17 @@
-const Investigador = require('../models/investigador.model.js');
+const IncidenciaLeve = require('../models/investigador.model.js');
 
 // Crear y salvar
 exports.create = (req,res)=>{
 
-    // Validamos el Investigador
+    // Validamos el IncidenciaLeve
     if (!req.body){
         console.log(req.body);
         return res.status(400).send({
-           message:"Investigador Vacio..." 
+           message:"IncidenciaLeve Vacio..." 
         });
     }
 
-    const investigador = new Investigador({
+    const investigador = new IncidenciaLeve({
         nombre: req.body.nombre || "Sin Nombre",
         profesion: req.body.profesion || "Sin profesion",
         puntosVida: req.body.vida|| 42,
@@ -32,7 +32,7 @@ exports.create = (req,res)=>{
 // Obtener todos los investigadores
 exports.findAll = (req,res) => {
 
-        Investigador.find().then(investigadores=>{
+        IncidenciaLeve.find().then(investigadores=>{
             res.send(investigadores);
         }).catch(err=>{
             res.status(500).send({
@@ -45,18 +45,18 @@ exports.findAll = (req,res) => {
 
 // Obtener un investigador por Id
 exports.findOne = (req,res) => {
-    Investigador.findById(req.params.investigadorId)
+    IncidenciaLeve.findById(req.params.investigadorId)
     .then(investigador=>{
         if (!investigador){
             return res.status(404).send({
-                message: "Investigador NOT FOUND con ID " +req.params.investigadorId
+                message: "IncidenciaLeve NOT FOUND con ID " +req.params.investigadorId
             });
             }
             res.send(investigador);
         }).catch(err=>{
             if(err.kind === 'ObjectId'){
                 return res.status(404).send({
-                    message: "Investigador no encontrado con ese id :" +req.params.investigadorId
+                    message: "IncidenciaLeve no encontrado con ese id :" +req.params.investigadorId
                 });
             }
              return res.status(500).send({
@@ -73,12 +73,12 @@ exports.update = (req, res) => {
     // Validate Request
     if(!req.body) {
         return res.status(400).send({
-            message: "Investigador vacio"
+            message: "IncidenciaLeve vacio"
         });
     }
 
     // Find note and update it with the request body
-    Investigador.findByIdAndUpdate(req.params.investigadorId, {
+    IncidenciaLeve.findByIdAndUpdate(req.params.investigadorId, {
         nombre: req.body.nombre|| "Sin nombre",
         profesion: req.body.profesion || "Sin profesion",
         puntosVida: req.body.puntosVida || 0,
@@ -87,40 +87,40 @@ exports.update = (req, res) => {
     .then(investigador => {
         if(!investigador) {
             return res.status(404).send({
-                message: "Investigador not found with id " + req.params.investigadorId
+                message: "IncidenciaLeve not found with id " + req.params.investigadorId
             });
         }
         res.send(investigador);
     }).catch(err => {
         if(err.kind === 'ObjectId') {
             return res.status(404).send({
-                message: "Investigador not found with id " + req.params.investigadorId
+                message: "IncidenciaLeve not found with id " + req.params.investigadorId
             });                
         }
         return res.status(500).send({
-            message: "Error updating Investigador with id " + req.params.investigadorId
+            message: "Error updating IncidenciaLeve with id " + req.params.investigadorId
         });
     });
 };
 
 // Borrar un investigador 
 exports.delete = (req,res)=>{
-    Investigador.findByIdAndRemove(req.params.investigadorId)
+    IncidenciaLeve.findByIdAndRemove(req.params.investigadorId)
     .then(investigador => {
         if(!investigador) {
             return res.status(404).send({
-                message: "Investigador no encontrado " + req.params.investigadorId
+                message: "IncidenciaLeve no encontrado " + req.params.investigadorId
             });
         }
         res.send({message: "Cthulhu ha vencido !"});
     }).catch(err => {
         if(err.kind === 'ObjectId' || err.name === 'NotFound') {
             return res.status(404).send({
-                message: "Investigador not found with id " + req.params.investigadorId
+                message: "IncidenciaLeve not found with id " + req.params.investigadorId
             });                
         }
         return res.status(500).send({
-            message: "No podemos matar a ese Investigador with id " + req.params.investigadorId
+            message: "No podemos matar a ese IncidenciaLeve with id " + req.params.investigadorId
         });
     });
 };

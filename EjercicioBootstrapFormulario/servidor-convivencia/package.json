@@ -1,0 +1,11 @@
+{
+  "name": "servidor-convivencia",
+  "version": "1.0.0",
+  "description": "Node Servidor Convivencia",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tomás Ezequiel Weiske Rumbo",
+  "license": "ISC"
+}
