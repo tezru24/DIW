@@ -1,15 +1,17 @@
 const mongoose= require('mongoose');
 
 const IncidenciaGraveSchema = mongoose.Schema({
-    nombreAlumno:String,
-    nombreProfesor:String,
+    alumno:String,
+    profesor:String,
     grupo:String,
     lugar:String,
-    horariFecha:Date,
-    horariHora:Date,
+    fecha:Date,
+    horario:Date,
     fechaIncidente:Date,
     hora:Date,
-    descripcion:String,
+    textareaDescripcion:String,
+    radio:String,
+    textareaTipificacioGrave:String,
     cbTipificacioGrave1:String,
     cbTipificacioGrave2:String,
     cbTipificacioGrave3:String,
@@ -25,7 +27,7 @@ const IncidenciaGraveSchema = mongoose.Schema({
     cbTipificacioGrave13:String,
     cbTipificacioGrave14:String,
     cbTipificacioGrave15:String,
-    cbTipificacioGrave16:String,
+    cbTipificacioGrave16:String
 },{
     timestamps:true
 });

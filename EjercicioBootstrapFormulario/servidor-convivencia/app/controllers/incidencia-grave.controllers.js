@@ -1,4 +1,4 @@
-const IncidenciaLeve = require('../models/incidencia-leve.models.js');
+const IncidenciaGrave = require('../models/incidencia-grave.models.js');
 
 // Crear y salvar
 exports.create = (req,res)=>{
@@ -11,7 +11,7 @@ exports.create = (req,res)=>{
         });
     }
 
-    const incidenciaLeve = new IncidenciaLeve({
+    const incidenciaGrave = new IncidenciaGrave({
         alumno: req.body.alumno || "Sin Nombre Alumno",
         profesor: req.body.profesor || "Sin Nombre Profesor",
         grupo: req.body.grupo || "Grupo Vacio",
@@ -20,22 +20,14 @@ exports.create = (req,res)=>{
         horario: req.body.horario || 12,
         fechaIncidente: req.body.fechaIncidente || 24-12-2018,
         hora: req.body.hora || 12,
-        textareaDescripcion: req.body.textareaDescripcion || "Sin Descripcion",
-        inputRealitzacio: req.body.inputRealitzacio || "Vacio",
-        fechaRealitzacio: req.body.fechaRealitzacio || 24-12-2018,
-        horariRealitzacio: req.body.horariRealitzacio || 12,
-        fechaSuspensio1: req.body.fechaSuspensio1 || 24-12-2018,
-        fecha2Suspensio1: req.body.fecha2Suspensio1 || 12,
-        inputSuspensio2: req.body.inputSuspensio2 || "Vacio",
-        fecha1Suspensio2: req.body.fecha1Suspensio2 || 24-12-2018,
-        fecha2Suspensio2: req.body.fecha2Suspensio2 || 24-12-2018
+        textareaDescripcion: req.body.textaeaDescripcion || "Sin Descripcion",
     })
 
-    incidenciaLeve.save().then(data =>{
+    incidenciaGrave.save().then(data =>{
         res.send(data);
     }).catch(err => {
         res.status(500).send({
-            message: err.message|| "Algo esta ocurriendo con tu Incidencia Leve"
+            message: err.message|| "Algo esta ocurriendo con tu Incidencia Grave"
         });
     });
 };
@@ -45,7 +37,7 @@ exports.create = (req,res)=>{
 // Obtener todos los investigadores
 exports.findAll = (req,res) => {
 
-        IncidenciaLeve.find().then(incidencias=>{
+        IncidenciaGrave.find().then(incidencias=>{
             res.send(incidencias);
         }).catch(err=>{
             res.status(500).send({
@@ -58,22 +50,22 @@ exports.findAll = (req,res) => {
 
 // Obtener un investigador por Id
 exports.findOne = (req,res) => {
-    IncidenciaLeve.findById(req.params.incidenciaLeveId)
-    .then(incidenciaLeve=>{
-        if (!incidenciaLeve){
+    IncidenciaGrave.findById(req.params.incidenciaGraveId)
+    .then(incidenciaGrave=>{
+        if (!incidenciaGrave){
             return res.status(404).send({
-                message: "Incidencia Leve NOT FOUND con ID " +req.params.incidenciaLeveId
+                message: "Incidencia Grave NOT FOUND con ID " +req.params.incidenciaGraveId
             });
             }
-            res.send(incidenciaLeve);
+            res.send(incidenciaGrave);
         }).catch(err=>{
             if(err.kind === 'ObjectId'){
                 return res.status(404).send({
-                    message: "Incidencia Leve no encontrado con ese id :" +req.params.incidenciaLeveId
+                    message: "Incidencia Grave no encontrado con ese id :" +req.params.incidenciaGraveId
                 });
             }
              return res.status(500).send({
-                message: "Tenemos NOSOTROS problemas con ese id :" +req.params.incidenciaLeveId
+                message: "Tenemos NOSOTROS problemas con ese id :" +req.params.incidenciaGraveId
              });
         });
     };
@@ -86,12 +78,12 @@ exports.update = (req, res) => {
     // Validate Request
     if(!req.body) {
         return res.status(400).send({
-            message: "Incidencia Leve vacia"
+            message: "Incidencia Grave vacia"
         });
     }
 
     // Find note and update it with the request body
-    IncidenciaLeve.findByIdAndUpdate(req.params.incidenciaLeveId, {
+    IncidenciaGrave.findByIdAndUpdate(req.params.incidenciaGraveId, {
         alumno: req.body.nombreAlumno || "Sin Nombre Alumno",
         profesor: req.body.nombreProfesor || "Sin Nombre Profesor",
         grupo: req.body.grupo || "Grupo Vacio",
@@ -110,43 +102,43 @@ exports.update = (req, res) => {
         fecha1Suspensio2: req.body.fecha1Suspensio2 || 24-12-2018,
         fecha2Suspensio2: req.body.fecha2Suspensio2 || 24-12-2018
     }, {new: true})
-    .then(incidenciaLeve => {
-        if(!incidenciaLeve) {
+    .then(incidenciaGrave => {
+        if(!incidenciaGrave) {
             return res.status(404).send({
-                message: "Incidencia Leve not found with id " + req.params.incidenciaLeveId
+                message: "Incidencia Grave not found with id " + req.params.incidenciaGraveId
             });
         }
-        res.send(incidenciaLeve);
+        res.send(incidenciaGrave);
     }).catch(err => {
         if(err.kind === 'ObjectId') {
             return res.status(404).send({
-                message: "Incidencia Leve not found with id " + req.params.incidenciaLeveId
+                message: "Incidencia Grave not found with id " + req.params.incidenciaGraveId
             });                
         }
         return res.status(500).send({
-            message: "Error updating Incidencia Leve con id " + req.params.incidenciaLeveId
+            message: "Error updating Incidencia Grave con id " + req.params.incidenciaGraveId
         });
     });
 };
 
 // Borrar un investigador 
 exports.delete = (req,res)=>{
-    IncidenciaLeve.findByIdAndRemove(req.params.incidenciaLeveId)
-    .then(incidenciaLeve => {
-        if(!incidenciaLeve) {
+    IncidenciaGrave.findByIdAndRemove(req.params.incidenciaGraveId)
+    .then(incidenciaGrave => {
+        if(!incidenciaGrave) {
             return res.status(404).send({
-                message: "Incidencia Leve no encontrada " + req.params.incidenciaLeveId
+                message: "Incidencia Grave no encontrada " + req.params.incidenciaGraveId
             });
         }
-        res.send({message: "Incidencia Leve eliminada !"});
+        res.send({message: "Incidencia Grave eliminada !"});
     }).catch(err => {
         if(err.kind === 'ObjectId' || err.name === 'NotFound') {
             return res.status(404).send({
-                message: "Incidencia Leve not found con id " + req.params.incidenciaLeveId
+                message: "Incidencia Grave not found con id " + req.params.incidenciaGraveId
             });                
         }
         return res.status(500).send({
-            message: "No podemos eliminar a esa Incidencia Leve con id " + req.params.incidenciaLeveId
+            message: "No podemos eliminar a esa Incidencia Grave con id " + req.params.incidenciaGraveId
         });
     });
 };

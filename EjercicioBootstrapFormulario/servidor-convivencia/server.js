@@ -35,8 +35,11 @@ app.get('/',(req,res)=>{
     res.json({"message":"Parte Backend de nuestro programa"});
 });
 
+// Require IncidenciaLeves routes
+require('./app/routes/incidencia-leve.routes.js')(app);
+
 // Require IncidenciaLevees routes
-require('./app/routes/IncidenciaLeve.routes.js')(app);
+require('./app/routes/incidencia-grave.routes.js')(app);
 
 // Escuchemos en un puerto
 
