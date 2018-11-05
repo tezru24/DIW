@@ -1,6 +1,6 @@
 const mongoose= require('mongoose');
 
-const IncidenciaLeveSchema = mongoose.Schema({
+const IncidenciaSchema = mongoose.Schema({
     alumno:String,
     profesor:String,
     grupo:String,
@@ -11,6 +11,7 @@ const IncidenciaLeveSchema = mongoose.Schema({
     hora:Date,
     textareaDescripcion:String,
     radio:String,
+    textareaTipificacioGrave:String,
     cbCompareixença:String,
     cbRetirada:String,
     cbPrivacio:String,
@@ -46,9 +47,25 @@ const IncidenciaLeveSchema = mongoose.Schema({
     cbTipificacioLeve17:String,
     cbTipificacioLeve18:String,
     cbTipificacioLeve19:String,
+    cbTipificacioGrave1:String,
+    cbTipificacioGrave2:String,
+    cbTipificacioGrave3:String,
+    cbTipificacioGrave4:String,
+    cbTipificacioGrave5:String,
+    cbTipificacioGrave6:String,
+    cbTipificacioGrave7:String,
+    cbTipificacioGrave8:String,
+    cbTipificacioGrave9:String,
+    cbTipificacioGrave10:String,
+    cbTipificacioGrave11:String,
+    cbTipificacioGrave12:String,
+    cbTipificacioGrave13:String,
+    cbTipificacioGrave14:String,
+    cbTipificacioGrave15:String,
+    cbTipificacioGrave16:String
 },{
     timestamps:true
 });
 
 
-module.exports = mongoose.model('Incidencia-Leve',IncidenciaLeveSchema);
+module.exports = mongoose.model('Incidencias',IncidenciaSchema);

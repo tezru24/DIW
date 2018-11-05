@@ -38,3 +38,11 @@ function Resetear(){
   document.getElementById('formulario').reset();
   EliminarDiv();
 }
+function CambiarNombre(){
+  if(document.getElementById("grave").checked){
+    document.getElementById("grave").name = "grave";
+  }
+  else if(document.getElementById("leve").checked){
+    document.getElementById("leve").name = "leve";
+  }
+}

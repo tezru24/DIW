@@ -36,10 +36,7 @@ app.get('/',(req,res)=>{
 });
 
 // Require IncidenciaLeves routes
-require('./app/routes/incidencia-leve.routes.js')(app);
-
-// Require IncidenciaLevees routes
-require('./app/routes/incidencia-grave.routes.js')(app);
+require('./app/routes/incidencias.routes.js')(app);
 
 // Escuchemos en un puerto
 
