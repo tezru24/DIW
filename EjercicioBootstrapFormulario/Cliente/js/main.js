@@ -19,7 +19,7 @@ function inicio() {
 
   var today = year + "-" + month + "-" + day;       
   document.getElementById('fecha').value = today;
-  document.getElementById('fecha-incidente').value = today;
+  document.getElementById('fechaIncidente').value = today;
   document.getElementById('d2').value = today;
   document.getElementById('margen2').value = today;
   document.getElementById('margen3').value = today;
@@ -28,21 +28,43 @@ function inicio() {
 
   MarcarLeve();
 }
-function EliminarDiv(){
-  document.getElementById('seleccionLeve').style.display = document.getElementById("leve").checked ? "block": "none";
-  document.getElementById('tipificacion-Leve').style.display = document.getElementById("leve").checked ? "block": "none";
-  document.getElementById('seleccionGrave').style.display = document.getElementById("grave").checked ? "block": "none";
-  document.getElementById('tipificacion-Grave').style.display = document.getElementById("grave").checked ? "block": "none";
+function CambiarLeve(){
+  document.getElementById("tipificacion-Grave").classList.remove("PonerGrave");
+  document.getElementById("seleccionGrave").classList.remove("PonerGrave");
+  document.getElementById("tipificacion-Grave").classList.add("QuitarGrave");
+  document.getElementById("seleccionGrave").classList.add("QuitarGrave");
+  document.getElementById("seleccionLeve").classList.add("PonerLeve");
+  document.getElementById("tipificacion-Leve").classList.add("PonerLeve");
+  document.getElementById("seleccionLeve").classList.remove("QuitarLeve");
+  document.getElementById("tipificacion-Leve").classList.remove("QuitarLeve");
+
+
+  
 }
-function Resetear(){
-  document.getElementById('formulario').reset();
-  EliminarDiv();
+function CambiarGrave(){
+  document.getElementById("seleccionLeve").classList.add("QuitarLeve");
+  document.getElementById("tipificacion-Leve").classList.add("QuitarLeve");
+  document.getElementById("seleccionLeve").classList.remove("PonerLeve");
+  document.getElementById("tipificacion-Leve").classList.remove("PonerLeve");
+  document.getElementById("tipificacion-Grave").classList.remove("QuitarGrave");
+  document.getElementById("seleccionGrave").classList.remove("QuitarGrave");
+  document.getElementById("tipificacion-Grave").classList.add("PonerGrave");
+  document.getElementById("seleccionGrave").classList.add("PonerGrave");
+
+  
+  
 }
-function CambiarNombre(){
+function CambiarNombreGrave(){
   if(document.getElementById("grave").checked){
+    
+    document.getElementById("leve").checked = 0;
     document.getElementById("grave").name = "grave";
   }
-  else if(document.getElementById("leve").checked){
+}
+function CambiarNombreLeve(){
+  if(document.getElementById("leve").checked){
+    document.getElementById("grave").checked = 0;
     document.getElementById("leve").name = "leve";
   }
+ 
 }

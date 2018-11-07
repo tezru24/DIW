@@ -14,6 +14,18 @@
 #alumno {
     width: 30%;
 }
+.QuitarGrave{
+display: none;
+}
+.QuitarLeve{
+display: none;
+}
+.PonerGrave{
+display: block;
+}
+.PonerLeve{
+    display: block;
+}
 .grupo {
     padding-left: 50%;
     margin-top: -2.75%;
@@ -110,9 +122,4 @@
     height: 2%;
     width: 2%;
 }
-#seleccionGrave {
-    display: none;
-}
-#tipificacion-Grave {
-    display: none;
-}
+

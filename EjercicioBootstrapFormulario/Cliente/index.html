@@ -52,8 +52,8 @@
         <p class="margen">Descripció de l'incident:</p>
         <textarea name="textareaDescripcion" class="margen" id="tamanyo"></textarea>
         <div class="profesor">
-            <input id="grave" name="radio" type="radio" onclick="EliminarDiv()" /> Grave
-            <input id="leve" name="radio" type="radio" checked="true" onclick="EliminarDiv()" /> Leve
+            <input id="grave" name="leve" type="radio" onclick="CambiarGrave(),CambiarNombreGrave()" /> Grave
+            <input id="leve" name="leve" type="radio" checked="true" onclick="CambiarLeve(),CambiarNombreLeve()" /> Leve
         </div>
         <div id="seleccionLeve">
         <p class="texto1">En aplicació de l'article 37 del decret 39/08 sobre drets i deures, es comunica al pare/mare de l'alumne la imposició de la següent mesura correctora:</p>
@@ -93,14 +93,14 @@
             <textarea name="textareaTipificacioLeve" class="margen" id="tamanyo2"></textarea>
         </div>
         </div>
-        <div id="seleccionGrave">
+        <div id="seleccionGrave" class="QuitarGrave">
         <div class="tipificacion2">
             <p class="margen">Tipificació (3) de l'incident segons l'article 42: </p>
             <p></p>
             <textarea name="textareaTipificacioGrave" class="margen" id="tamanyo3"></textarea>
         </div>
         </div>
-        <div id="tipificacion-Grave">
+        <div id="tipificacion-Grave" class="QuitarGrave">
             <p class="texto1">(3)Tipificació:</p>
             <input type="checkbox" class="margen" name="cbTipificacioGrave1" /> Els actes greus d'indisciplina i les injúries i ofenses contra memebres de la comunitat educativa que sobrepassen la
             <p class="margen2">incorrecció o la desconsideració previstes en el article 35.</p>

@@ -4,6 +4,8 @@ module.exports = (app) => {
     // Create a new investigadores
     app.post('/incidencias', incidencias.create);
 
+    app.get('/incidencias', incidencias.findAll);
+
     // Retrieve a single investigadores with investigadorId
     app.get('/incidencias/incidenciaLeve', incidencias.findLeve);
     app.get('/incidencias/incidenciaGrave', incidencias.findGrave);
