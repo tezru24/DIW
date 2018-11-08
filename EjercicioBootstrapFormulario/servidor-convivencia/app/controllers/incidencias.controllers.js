@@ -22,6 +22,7 @@ exports.create = (req,res)=>{
         hora: req.body.hora || 12,
         leve:req.body.leve,
         grave:req.body.grave,
+        dias:req.body.dias,
         textareaDescripcion: req.body.textareaDescripcion || "Sin Descripcion",
         inputRealitzacio: req.body.inputRealitzacio || "Vacio",
         fechaRealitzacio: req.body.fechaRealitzacio || 24-12-2018,
@@ -96,7 +97,7 @@ exports.findAll = (req,res) => {
 };
 
 // Obtener todos los investigadores
-exports.findLeve = (req,res) => {
+exports.findLeve = (res) => {
 
         IncidenciaLeve.find({leve:"on"}).then(incidenciaLeve=>{
             res.send(incidenciaLeve);
@@ -109,7 +110,7 @@ exports.findLeve = (req,res) => {
 };
 
 // Obtener todos los investigadores
-exports.findGrave = (req,res) => {
+exports.findGrave = (res) => {
 
     IncidenciaLeve.find({grave:"on"}).then(incidenciaLeve=>{
         res.send(incidenciaLeve);

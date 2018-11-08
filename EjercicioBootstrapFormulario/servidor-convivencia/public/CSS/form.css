@@ -1,0 +1,125 @@
+.pagina {
+    width: 100%;
+    height: auto;
+}
+
+.titulo {
+    margin-top: 10px;
+    margin-left: 20%;
+}
+.alumno {
+    padding-left: 15%;
+    padding-top: 2%;
+}
+#alumno {
+    width: 30%;
+}
+.QuitarGrave{
+display: none;
+}
+.QuitarLeve{
+display: none;
+}
+.PonerGrave{
+display: block;
+}
+.PonerLeve{
+    display: block;
+}
+.grupo {
+    padding-left: 50%;
+    margin-top: -2.75%;
+}
+#grupo {
+    width: 43.75%;
+}
+.profesor {
+    padding-top: 0.5%;
+    padding-left: 15%;
+}
+#profesor {
+    width: 27.5%;
+}
+.horario {
+    padding-left: 50%;
+    margin-top: -2.75%;
+}
+#fecha,#horario {
+    width: 17.5%;
+}
+.fecha-incidente {
+    padding-top: 1%;
+    padding-left: 15%;
+}
+#fecha-incidente {
+    width: 27.2%;
+}
+.hora {
+    padding-left: 50%;
+    margin-top: -2.43%;
+}
+#hora {
+    width: 10%;
+}
+.lugar {
+    padding-left: 57.8%;
+    margin-top: -2.65%;
+}
+#lugar {
+    width: 35.7%;
+}
+.texto1 {
+    padding-left: 15%;
+    padding-top: 2%;
+}
+.margen {
+    margin-left: 15%;
+}
+.margen2 {
+    margin-left: 16.15%;
+}
+#d1 {
+    width: 59.5%;
+    margin-left: 15%;
+}
+#titulo {
+    margin-left: 20%;
+}
+#d2 {
+    width: 35%;
+}
+.d3 {
+    width: 23.5%;
+}
+#d4 {
+    width: 35.5%;
+}
+#margen2 {
+    margin-left: 15%;
+}
+#tamanyo {
+    width: 60%;
+    height: 20%;
+}
+.boton {
+    margin-left: 40%;
+    margin-top: 3%;
+}
+#tamanyo2,#tamanyo3 {
+    width: 60%;
+    height: 10%;
+}
+.logo {
+    width: 10%;
+    height: 10%;
+    margin-left: 16%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+}
+.dias {
+    margin-left: 35.75%;
+    margin-top: -2.25%;
+    height: 2%;
+    width: 2%;
+}
+

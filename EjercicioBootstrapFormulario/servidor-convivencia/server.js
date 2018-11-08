@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-
+const path = require('path');
 const app = express();
 
 // Utilizaremos body-parser para "parsear lo que nos pidan"
@@ -35,7 +35,10 @@ app.get('/',(req,res)=>{
     res.json({"message":"Parte Backend de nuestro programa"});
 });
 
-// Require IncidenciaLeves routes
+// Paginas publicas (estaticas)
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Require Incidencias routes
 require('./app/routes/incidencias.routes.js')(app);
 
 // Escuchemos en un puerto

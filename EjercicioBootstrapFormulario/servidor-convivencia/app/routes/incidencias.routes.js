@@ -10,6 +10,9 @@ module.exports = (app) => {
     app.get('/incidencias/incidenciaLeve', incidencias.findLeve);
     app.get('/incidencias/incidenciaGrave', incidencias.findGrave);
 
+    //Buscar una incidencia
+    app.get('/incidencias/:incidenciaLeveId', incidencias.findOne);
+
     // Update a investigadores with investigadorId
     app.put('/incidencias/:incidenciaLeveId', incidencias.update);
 
