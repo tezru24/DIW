@@ -97,7 +97,7 @@ exports.findAll = (req,res) => {
 };
 
 // Obtener todos los investigadores
-exports.findLeve = (res) => {
+exports.findLeve = (req,res) => {
 
         IncidenciaLeve.find({leve:"on"}).then(incidenciaLeve=>{
             res.send(incidenciaLeve);
@@ -110,7 +110,7 @@ exports.findLeve = (res) => {
 };
 
 // Obtener todos los investigadores
-exports.findGrave = (res) => {
+exports.findGrave = (req,res) => {
 
     IncidenciaLeve.find({grave:"on"}).then(incidenciaLeve=>{
         res.send(incidenciaLeve);
