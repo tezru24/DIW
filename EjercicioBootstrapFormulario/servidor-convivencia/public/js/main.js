@@ -68,3 +68,6 @@ function CambiarNombreLeve(){
   }
  
 }
+function AccederOtraPagina(){
+  document.getElementById("botonEnviar").href = "http://localhost:3000/menus-listar.html"
+}

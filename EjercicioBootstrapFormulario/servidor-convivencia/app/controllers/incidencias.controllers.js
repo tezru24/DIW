@@ -76,7 +76,7 @@ exports.create = (req,res)=>{
     })
 
     incidenciaLeve.save().then(data =>{
-        res.send(data);
+        res.redirect("menus-listar.html");
     }).catch(err => {
         res.status(500).send({
             message: err.message|| "Algo esta ocurriendo con tu Incidencia Leve"

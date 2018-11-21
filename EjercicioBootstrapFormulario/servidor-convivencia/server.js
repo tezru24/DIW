@@ -32,7 +32,7 @@ mongoose.connect(dbConfig.url,{
 
 // Vamos a definir un "punto de inicio"
 app.get('/',(req,res)=>{
-    res.json({"message":"Parte Backend de nuestro programa"});
+    res.redirect("menu-principal.html");
 });
 
 // Paginas publicas (estaticas)
