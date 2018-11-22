@@ -1,23 +1,113 @@
+body {
+    background-color: #f0ebe6;
+}
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    border: 1px solid black;
 }
 
 li {
     float: left;
+    padding-left: 17%;
 }
 
 li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: #c2bab3;
+    color: black;
+    text-decoration: none;
+}
+
+#imagenSenia{
+    width: 200px;
+    height: 75px;
+    position: absolute;
+    right: 10%;
+    top: 2%;
+}
+.menu{
+    padding-top: 8%;
+}
+p{
+    position: absolute;
+    left: 38%;
+    top: 1%;
+    border: 2px solid #333;
+    font: normal normal 60px quicksand;
+    color:#333;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 30px 0px 30px 0px;
+}
+.clear:before, .clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
+.clear {
+    *zoom: 1;
+}
+
+a#pull {
+    display: none;
+}
+@media only screen and (max-width : 500px) {
+    nav {
+        border-bottom: 0;
+        height: auto;
+    }
+
+    nav ul {
+        display: none;
+        height: auto;
+        background-color: #666;
+        width: 100%;
+    }
+
+    nav li {
+        width: 50%;
+        background-color: #666;
+        float: left;
+        position: relative;
+    }
+
+    nav a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+    }
+
+    nav a#pull {
+        display: block;
+        background-color: #666;
+        width: 100%;
+        position: relative;
+    }
+
+    nav a#pull:after {
+        content:"";
+        background-image: "img/nav-icon.png" no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
 }
