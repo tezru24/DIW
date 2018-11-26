@@ -1,23 +1,44 @@
+body {
+    background-color: #f0ebe6;
+    font-family: 'Roboto Condensed', sans-serif;
+}
 .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    border: 1px solid black;
 }
 
 .menu li {
     float: left;
+    padding-left: 13%;
 }
 
 .menu li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 .menu li a:hover {
-    background-color: #111;
+    background-color: #c2bab3;
+    color: black;
+    text-decoration: none;
+}
+
+#divLista li {
+    background-color: #c2bab3;
+    color: black;
+}
+#divLista {
+    margin-left: -18px;
+}
+.container,.jumbotron-jumbotron-fluid,.container-fluid {
+    background-color: #f0ebe6;
+}
+.display-4 {
+    padding-top: 15px;
 }
