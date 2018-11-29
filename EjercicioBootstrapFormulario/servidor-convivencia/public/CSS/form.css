@@ -121,7 +121,7 @@ display: block;
     height: 2%;
     width: 2%;
 }
-.menu ul {
+#menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -129,12 +129,12 @@ display: block;
     border: 1px solid black;
 }
 
-.menu li {
+#menu li {
     float: left;
     padding-left: 17%;
 }
 
-.menu li a {
+#menu li a {
     display: block;
     color: black;
     text-align: center;
@@ -142,11 +142,36 @@ display: block;
     text-decoration: none;
 }
 
-.menu li a:hover {
+#menu li a:hover {
     background-color: #c2bab3;
     color: black;
     text-decoration: none;
 }
 body {
     background-color: #f0ebe6;
+}
+#imagen-menu {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+#menu-movil {
+    display: none;
+}
+@media screen and (max-width:500px) {
+    #menu-movil {
+        display: block;
+    }
+    .logo{
+        width: 100px;
+        height: 35px;
+        position: absolute;
+        right: 7%;
+        top: 2%;
+    }
+    #menu {
+        z-index: 999;
+        width: 200px;
+        display: none;
+    }
 }

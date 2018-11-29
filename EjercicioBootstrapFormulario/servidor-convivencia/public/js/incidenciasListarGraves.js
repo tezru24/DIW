@@ -11,3 +11,16 @@ $.getJSON( "http://localhost:3000/incidencias", function( data ) {
     html: items.join( "" )
   }).appendTo( "#divLista" );
 });
+function MostrarMenu(){
+  if(document.getElementById("menu").style.display == "block"){
+      document.getElementById("menu").style.display = "none";
+  }else {
+      document.getElementById("menu").style.display = "block";
+  }
+}
+
+function cargar(){
+  document.getElementById("imagen-menu").addEventListener("click",MostrarMenu);
+}
+
+document.addEventListener("DOMContentLoaded",cargar);

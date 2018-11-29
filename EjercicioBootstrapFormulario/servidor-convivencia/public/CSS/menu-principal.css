@@ -36,7 +36,7 @@ li a:hover {
     right: 10%;
     top: 2%;
 }
-.menu{
+#menu{
     padding-top: 8%;
 }
 p{
@@ -64,21 +64,24 @@ p{
 .clear {
     *zoom: 1;
 }
-
-a#pull {
+#imagen-menu {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+#menu-movil {
     display: none;
 }
-@media only screen and (max-width : 500px) {
-    nav {
-        border-bottom: 0;
-        height: auto;
+@media screen and (max-width:500px) {
+    #menu-movil {
+        display: block;
     }
-    p {
+    p{
         position: absolute;
-        left: 38%;
+        left: 20%;
         top: 1%;
         border: 2px solid #333;
-        font: normal normal 30px quicksand;
+        font: normal normal 14px quicksand;
         color:#333;
         letter-spacing: 2px;
         text-align: center;
@@ -86,41 +89,16 @@ a#pull {
         padding: 10px;
         border-radius: 30px 0px 30px 0px;
     }
-    nav ul {
-        display: none;
-        height: auto;
-        background-color: #c2bab3;
-        width: 100%;
-    }
-
-    nav li {
-        width: 50%;
-        background-color: #c2bab3;
-        float: left;
-        position: relative;
-    }
-
-    nav a {
-        text-align: left;
-        width: 100%;
-        text-indent: 25px;
-    }
-
-    nav a#pull {
-        display: block;
-        background-color: #c2bab3;
-        width: 100%;
-        position: relative;
-    }
-
-    nav a#pull:after {
-        content:"";
-        background-image: "img/nav-icon.png" no-repeat;
-        width: 30px;
-        height: 30px;
-        display: inline-block;
+    #imagenSenia{
+        width: 100px;
+        height: 35px;
         position: absolute;
-        right: 15px;
-        top: 10px;
+        right: 7%;
+        top: 2%;
+    }
+    #menu {
+        z-index: 999;
+        width: 200px;
+        display: none;
     }
 }
