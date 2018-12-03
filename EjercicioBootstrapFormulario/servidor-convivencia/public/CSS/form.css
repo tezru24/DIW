@@ -158,9 +158,13 @@ body {
 #menu-movil {
     display: none;
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:980px) {
     #menu-movil {
         display: block;
+    }
+    #imagen-menu {
+        width: 100px;
+        height: 100px;
     }
     .logo{
         width: 100px;
@@ -172,6 +176,10 @@ body {
     #menu {
         z-index: 999;
         width: 200px;
+        font-size: 23px;
         display: none;
+    }
+    #menu ul {
+        display:grid;
     }
 }

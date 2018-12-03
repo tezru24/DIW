@@ -2,7 +2,7 @@ var auxId = location.search.substr(1).split("=")[1];
 console.log(auxId);
 var Grave;
 var Leve;
-$.getJSON( "http://localhost:3000/incidencias/"+auxId, function( data ) {
+$.getJSON( "incidencias/"+auxId, function( data ) {
   var items = [];
     $.each( data, function( key, val ) {
   console.log(key);
@@ -23,7 +23,7 @@ $.getJSON( "http://localhost:3000/incidencias/"+auxId, function( data ) {
 function Eliminar(){
   $.ajax ({
     type:"DELETE",
-    url: "http://localhost:3000/incidencias/"+auxId,
+    url: "incidencias/"+auxId,
     data: "",
   });
   

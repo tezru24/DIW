@@ -101,4 +101,7 @@ p{
         width: 200px;
         display: none;
     }
+    #menu ul {
+        display:grid;
+    }
 }
