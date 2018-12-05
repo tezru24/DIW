@@ -50,6 +50,12 @@ body {
 #menu-movil {
     display: none;
 }
+#atras {
+    position: absolute;
+    left: 20px;
+    top: 65px;
+    cursor: pointer;
+}
 @media screen and (max-width:500px) {
     #menu-movil {
         display: block;
@@ -61,5 +67,14 @@ body {
     }
     #menu ul {
         display:grid;
+    }
+    #atras {
+        position: relative;
+        left: 20px;
+        top: 65px;
+        cursor: pointer;
+    }
+    .container {
+        padding-top: 80px;
     }
 }
