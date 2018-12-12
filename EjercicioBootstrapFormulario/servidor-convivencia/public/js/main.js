@@ -69,7 +69,7 @@ function CambiarNombreLeve(){
  
 }
 function AccederOtraPagina(){
-  document.getElementById("botonEnviar").href = "http://localhost:3000/menus-listar.html"
+  document.getElementById("botonEnviar").href = "menus-listar.html"
 }
 function MostrarMenu(){
   if(document.getElementById("menu").style.display == "block"){

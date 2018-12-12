@@ -162,6 +162,9 @@ body {
     #menu-movil {
         display: block;
     }
+    body{
+        font-size: 25px;
+    }
     #imagen-menu {
         width: 100px;
         height: 100px;
