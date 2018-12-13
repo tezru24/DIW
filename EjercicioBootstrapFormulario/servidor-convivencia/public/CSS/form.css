@@ -2,6 +2,9 @@
     width: 100%;
     height: auto;
 }
+body {
+    font-size: 22px;
+}
 .titulo {
     margin-top: 10px;
     margin-left: 20%;
@@ -44,7 +47,7 @@ display: block;
     margin-top: -2.75%;
 }
 #fecha,#horario {
-    width: 17.5%;
+    width: 16%;
 }
 .fecha-incidente {
     padding-top: 1%;
@@ -61,8 +64,8 @@ display: block;
     width: 10%;
 }
 .lugar {
-    padding-left: 57.8%;
-    margin-top: -2.65%;
+    padding-left: 59%;
+    margin-top: -3%;
 }
 #lugar {
     width: 35.7%;
@@ -88,10 +91,10 @@ display: block;
     width: 35%;
 }
 .d3 {
-    width: 23.5%;
+    width: 19.4%;
 }
 #d4 {
-    width: 35.5%;
+    width: 27.4%;
 }
 #margen2 {
     margin-left: 15%;
@@ -184,5 +187,118 @@ body {
     }
     #menu ul {
         display:grid;
+    }
+}
+@media screen and (max-width:1000px){
+    #menu-movil {
+        display: block;
+    }
+    body{
+        font-size: 25px;
+    }
+    #imagen-menu {
+        width: 100px;
+        height: 100px;
+    }
+    .logo{
+        width: 100px;
+        height: 35px;
+        position: absolute;
+        right: 7%;
+        top: 2%;
+    }
+    #menu {
+        z-index: 999;
+        width: 200px;
+        font-size: 23px;
+        display: none;
+    }
+    #menu ul {
+        display:grid;
+    }
+    .alumno {
+        padding-left: 10%;
+        padding-top: 2%;
+    }
+    #alumno {
+        width: 31%;
+    }
+    .grupo {
+        padding-left: 60%;
+        margin-top: -6.5%;
+    }
+    #grupo {
+        width: 63%;
+    }
+    .profesor {
+        padding-top: 1.5%;
+        padding-left: 10%;
+    }
+    #profesor {
+        width: 21.5%;
+    }
+    .horario {
+        padding-left: 55%;
+        margin-top: -6.5%;
+    }
+    #fecha,#horario {
+        width: 17.5%;
+    }
+    .fecha-incidente {
+        padding-top: 2%;
+        padding-left: 10%;
+    }
+    #fechaIncidente {
+        width: 23%;
+    }
+    .hora {
+        padding-left: 58%;
+        margin-top: -6.3%;
+    }
+    #hora {
+        width: 20%;
+    }
+    .lugar {
+        padding-left: 75%;
+        margin-top: -6.5%;
+    }
+    #lugar {
+        width: 54.5%;
+    }
+    .margen {
+        margin-left: 10%;
+    }
+    #tamanyo {
+        width: 87%;
+        height: 20%;
+    }
+    .texto1 {
+        padding-left: 10%;
+        padding-top: 2%;
+    }
+    .dias {
+        margin-left: 75%;
+        margin-top: -4.5%;
+        height: 6.5%;
+        width: 2%;
+    }
+    #d1 {
+        width: 84.5%;
+        margin-left: 10%;
+    }
+    #margen2 {
+        margin-left: 10%;
+    }
+    #d4 {
+        margin-left: 10%;
+        width: 84%;
+    }
+    #tamanyo2,#tamanyo3 {
+        width: 84%;
+        height: 20%;
+    }
+    .titulo {
+        margin-top: 10px;
+        margin-left: 2%;
     }
 }
