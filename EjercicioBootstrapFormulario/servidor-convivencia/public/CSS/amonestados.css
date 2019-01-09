@@ -1,0 +1,35 @@
+.alumno {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    line-height: 100px;
+    border: 1px solid purple;
+    border-radius: 10px;
+}
+#amonestados{
+    display: flex;
+    flex-direction: row;
+}
+@media (min-width: 800px){
+
+    #amonestados{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 800px){
+
+    #amonestados{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+@media (max-width: 500px){
+
+    #amonestados{
+        display: flex;
+        flex-direction: column;
+    }
+}
