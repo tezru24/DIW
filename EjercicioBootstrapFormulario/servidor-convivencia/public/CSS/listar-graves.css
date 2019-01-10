@@ -9,7 +9,13 @@ body {
     overflow: hidden;
     border: 1px solid black;
 }
-
+img {
+    width: 30px;
+    height: 30px;
+}
+span {
+    float: right;
+}
 #menu li {
     float: left;
     padding-left: 13%;

@@ -3,7 +3,8 @@ $.getJSON( "incidencias", function( data ) {
     $.each( data, function( key, val ) {
   console.log(key);
   if(val.leve == "on"){
-    items.push( "<a href=detalles.html?id="+val._id+"><li id='" + key + "' class='list-group-item'>" + val.alumno + "</li>"+"</a>" );
+    items.push( "<li id='" + key + "' class='list-group-item'><a href='detalles.html?id="+val._id+"' >" + val.alumno + "</a><span>Editar <img src='../img/editar.png'></span>  </li>"
+    );
   }});
   $( "<ul/>", {
     "class": "list-group",

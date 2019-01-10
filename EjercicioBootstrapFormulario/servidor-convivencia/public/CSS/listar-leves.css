@@ -2,6 +2,13 @@ body {
     background-color: #f0ebe6;
     font-family: 'Roboto Condensed', sans-serif;
 }
+img {
+    width: 30px;
+    height: 30px;
+}
+span {
+    float: right;
+}
 #menu ul {
     list-style-type: none;
     margin: 0;
