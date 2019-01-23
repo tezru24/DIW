@@ -1,7 +1,7 @@
 .container {
     display: grid;    
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 50px 540px 150px;
+    grid-template-rows: 50px 540px 120px;
     grid-gap: 5px;
     grid-template-areas:
         "h h h h h h h h h h h h"
@@ -20,7 +20,16 @@
     background-color: skyblue;
     grid-area: m;
 }
-
+p {
+    position: absolute;
+    top: 200px;
+    left: 35px;
+}
+select {
+    position: absolute;
+    top: 250px;
+    left: 75px;
+}
 .content {
     background-color: skyblue;
     grid-area: c;
@@ -29,4 +38,22 @@
 .footer {
     background-color: blue;
    grid-area: f;
+}
+button {
+    position: absolute;
+    top: 320px;
+}
+.dinosaurios {
+    position: relative;
+    left: 150px;
+}
+.carrito {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    left: 50px;
+    padding: 15px;
+}
+span {
+    color: white;
 }

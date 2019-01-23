@@ -1,0 +1,103 @@
+.container {
+    display: grid;    
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px 540px 120px;
+    grid-gap: 5px;
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+        "m m c c c c c c c c c c"
+        "f f f f f f f f f f f f";
+}
+.header {
+    background-color: #935113;
+    grid-area: h;
+    text-align: center;
+    color: white;
+    line-height: 50px;
+}
+
+.menu {
+    background-color: #ff9633;
+    grid-area: m;
+}
+.content {
+    background-color: #f5ac67;
+    grid-area: c;
+}
+
+.footer {
+    background-color: #935113;
+   grid-area: f;
+}
+#galleta1 {
+    width: 327px;
+    height: 540px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+#galleta2 {
+    width: 327px;
+    height: 540px;
+    border: 1px solid black;
+    background-color: white;
+    position: absolute;
+    left: 603px;
+    top: 63px;
+    cursor: pointer;
+}
+#galleta3 {
+    width: 327px;
+    height: 540px;
+    border: 1px solid black;
+    background-color: white;
+    position: absolute;
+    left: 933px;
+    top: 63px;
+    cursor: pointer;
+}
+#galleta4 {
+    width: 327px;
+    height: 540px;
+    border: 1px solid black;
+    background-color: white;
+    position: absolute;
+    left: 1263px;
+    top: 63px;
+    cursor: pointer;
+}
+.dinosaurios {
+    position: relative;
+    top: 120px;
+    left: 30px;
+}
+.dino-menu {
+    width: 150px;
+    height: 100px;
+    position: relative;
+    padding: 10px;
+}
+input {
+    width: 80px;
+    position: relative;
+    bottom: 40px;
+}
+.saladas {
+    width: 785px;
+    height: 118px;
+    border: 1px solid black;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+.dulces {
+    width: 785px;
+    height: 118px;
+    border: 1px solid black;
+    position: relative;
+    left: 787px;
+    bottom: 120px;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
