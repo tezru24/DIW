@@ -1,0 +1,12 @@
+li:nth-child(3n):before{
+    list-style: none;
+    content: "Fizz";
+}
+li:nth-child(5n):after{
+    list-style: none;
+    content: "Buzz";
+}
+li:nth-child(5n),li:nth-child(3n){
+    list-style: none;
+    content: "FizzBuzz";
+}
